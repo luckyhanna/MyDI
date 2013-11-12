@@ -9,11 +9,15 @@ package ro.teamnet.di;/*
 */
 
 import my.di.annotations.Qualifier;
+import my.di.util.Bean;
+import my.di.util.Scanner;
+import org.junit.Assert;
 import org.junit.Test;
 import sun.reflect.annotation.AnnotationParser;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.util.Map;
 
 public class MethodTest {
 
@@ -28,5 +32,18 @@ public class MethodTest {
 //                annotations[i]
             }
         }
+    }
+
+    @Test
+    public void testDependencies() throws Exception {
+        Method method = MyConfiguration.class.getDeclaredMethod("team1",Department.class,Person.class);
+        Map<String,Bean> dependencies = Scanner.scanDependencies(method);
+        Assert.assertNotNull(dependencies);
+    }
+
+    @Test
+    public void testBeans() throws Exception {
+        Map<String,Bean> beans = Scanner.scanBeans(MyConfiguration.class);
+        Assert.assertNotNull(beans);
     }
 }

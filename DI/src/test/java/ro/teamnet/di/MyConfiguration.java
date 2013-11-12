@@ -9,6 +9,7 @@ package ro.teamnet.di;/*
 */
 
 import my.di.annotations.Bean;
+import my.di.annotations.Configuration;
 import my.di.annotations.Qualifier;
 
 import javax.inject.Inject;
@@ -39,10 +40,15 @@ public class MyConfiguration {
         return new Person(department);
     }
 
+    @Bean
+    public String testBean() {
+        return "TestBean";
+    }
+    
     @Bean("team1")
     @Inject
-    public Team team1(@Qualifier("DEP1") Department department,@Qualifier("pers2") Person person, String name) {
-        return new Team(department, name);
+    public Team team1(@Qualifier("DEP1") Department department1,@Qualifier("pers2") Person person1, String testBean) {
+        return new Team(department1,testBean);
     }
 
 }

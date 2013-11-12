@@ -13,6 +13,7 @@ import my.di.cache.CacheMapManager;
 import my.di.util.Bean;
 import my.di.util.Scanner;
 
+import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,7 +21,9 @@ public class ApplicationContextImpl implements ApplicationContext {
 
     private Class configurationClass;
     
-    private Map<String,Bean> cacheMap = new HashMap<String, Bean>();
+    private Map<String,Object> cacheMap = new HashMap<String, Object>();
+    
+//    private static CacheMapManager cacheMapManager = CacheMapManager.getInstance();
 
     private ApplicationContextImpl(Class configurationClass) {
         this.configurationClass = configurationClass;
@@ -30,12 +33,16 @@ public class ApplicationContextImpl implements ApplicationContext {
         return new ApplicationContextImpl(configurationClass);
     }
 
-    public void initContainer() throws InstantiationException, IllegalAccessException {
-        Map<String,Bean> beans = Scanner.scanForBeans(configurationClass);
-        for (String s : beans.keySet()) {
-            Bean bean = beans.get(s);
-            Map<String,Bean> dependencies = Scanner.scanForDependencies(bean.getMethod());
+    public void initContainer() throws InstantiationException, IllegalAccessException, NoSuchMethodException {
+        Map<String,Bean> beans = Scanner.scanBeans(configurationClass);
+        for (String name : beans.keySet()) {
+            if (!cacheMap.containsKey(name)) {
+                Bean bean = beans.get(name);
+                Class containingClass = bean.getContainingClass();
+                Method method = bean.getMethod();
+//                containingClass.
 
+            }
         }
     }
 
