@@ -17,8 +17,8 @@ import java.util.Map;
 public class ScannerTest {
 
     @Test
-    public void testScanForBeans() throws Exception {
-        Map<String,Bean> beans = Scanner.scanForBeans(MyConfiguration.class);
+    public void testScanBeans() throws Exception {
+        Map<String,Bean> beans = Scanner.scanBeans(MyConfiguration.class);
         Assert.assertNotNull(beans);
 
     }

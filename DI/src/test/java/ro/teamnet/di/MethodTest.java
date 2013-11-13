@@ -17,13 +17,14 @@ import sun.reflect.annotation.AnnotationParser;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.math.BigDecimal;
 import java.util.Map;
 
 public class MethodTest {
 
     @Test
     public void testMethodMethods() throws Exception {
-        Method method = MyConfiguration.class.getDeclaredMethod("team1",Department.class,String.class);
+        Method method = MyConfiguration.class.getDeclaredMethod("team1",Department.class,Person.class,String.class);
         Annotation[][] annotations = method.getParameterAnnotations();
         Class[] parameterTypes = method.getParameterTypes();
         for (int i = 0; i <annotations.length; i++) {
@@ -36,7 +37,7 @@ public class MethodTest {
 
     @Test
     public void testDependencies() throws Exception {
-        Method method = MyConfiguration.class.getDeclaredMethod("team1",Department.class,Person.class);
+        Method method = MyConfiguration.class.getDeclaredMethod("team1",Department.class,Person.class,String.class);
         Map<String,Bean> dependencies = Scanner.scanDependencies(method);
         Assert.assertNotNull(dependencies);
     }
@@ -45,5 +46,11 @@ public class MethodTest {
     public void testBeans() throws Exception {
         Map<String,Bean> beans = Scanner.scanBeans(MyConfiguration.class);
         Assert.assertNotNull(beans);
+    }
+
+    @Test
+    public void testMyBooleand() throws Exception {
+        Method method = MyConfiguration.class.getDeclaredMethod("myBoolean",String.class, BigDecimal.class);
+        Map<String,Bean> dep = Scanner.scanDependencies(method);
     }
 }

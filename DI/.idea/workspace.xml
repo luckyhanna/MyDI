@@ -25,7 +25,7 @@
   </component>
   <component name="DebuggerManager">
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="30" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="31" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -51,7 +51,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" line="0" class="my.di.util.Scanner" package="my.di.util">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" line="0" class="Scanner.java" package="">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -64,7 +64,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="40" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="41" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -77,7 +77,59 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="46" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
+      <breakpoint url="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" line="47" class="ro.teamnet.di.MethodTest" package="ro.teamnet.di">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java" line="47" class="my.di.container.ApplicationContextImpl" package="my.di.container">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java" line="65" class="my.di.container.ApplicationContextImpl" package="my.di.container">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" line="225" class="my.di.util.Scanner" package="my.di.util">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" line="155" class="my.di.util.Scanner" package="my.di.util">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -134,19 +186,39 @@
       <file leaf-file-name="Scanner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="59" selection-start="6225" selection-end="6225" vertical-scroll-proportion="0.0">
+            <state line="225" column="0" selection-start="10503" selection-end="10503" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#3197#3211#0" expanded="true" />
-                <element signature="e#6705#6719#0" expanded="true" />
+                <element signature="e#6747#6761#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java">
+      <file leaf-file-name="ApplicationContextImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="79" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0">
+            <state line="72" column="63" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#713#729#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContext.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationContextTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/ApplicationContextTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="22" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -154,22 +226,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplicationContextImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java">
+      <file leaf-file-name="MethodTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="18" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.5971564">
+            <state line="52" column="16" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.53038675">
               <folding>
-                <element signature="e#661#677#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bean.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/di/util/Bean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="24" selection-start="3099" selection-end="3099" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -177,7 +240,7 @@
       <file leaf-file-name="MyConfiguration.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MyConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="44" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
+            <state line="61" column="28" selection-start="1404" selection-end="1413" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -213,7 +276,7 @@
       <file leaf-file-name="CacheManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/di/cache/CacheManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="45" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
+            <state line="24" column="29" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#414#428#0" expanded="true" />
@@ -237,22 +300,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/my/di/annotations/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/util/BeanBuilder.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/BeanBuilderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContext.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/cache/CacheMapManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/Team.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/ScannerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/cache/CacheMapManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/annotations/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/util/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/cache/CacheManager.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/MyConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContext.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/ApplicationContextTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/ScannerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/MyConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java" />
       </list>
     </option>
   </component>
@@ -608,102 +671,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MethodTest.testBeans">
-    <configuration default="false" name="BeanBuilderTest.testBeanBuilder" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ro.teamnet.di.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-        <pattern>
-          <option name="PATTERN" value="my.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="DI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
-      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.BeanBuilderTest" />
-      <option name="METHOD_NAME" value="testBeanBuilder" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Cover" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Cover" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="MethodTest.testMethodMethods" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ro.teamnet.di.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="DI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
-      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.MethodTest" />
-      <option name="METHOD_NAME" value="testMethodMethods" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ScannerTest.testScanForBeans" type="JUnit" factoryName="JUnit" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="DI" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
-      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.ScannerTest" />
-      <option name="METHOD_NAME" value="testScanForBeans" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <ConfigurationWrapper RunnerId="Debug" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.MethodTest.testMyBooleand">
     <configuration default="false" name="MethodTest.testDependencies" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="DI" />
@@ -739,6 +707,87 @@
       <option name="PACKAGE_NAME" value="ro.teamnet.di" />
       <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.MethodTest" />
       <option name="METHOD_NAME" value="testBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ApplicationContextTest.testInitContainer" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DI" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
+      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.ApplicationContextTest" />
+      <option name="METHOD_NAME" value="testInitContainer" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScannerTest.testScanBeans" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DI" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
+      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.ScannerTest" />
+      <option name="METHOD_NAME" value="testScanBeans" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MethodTest.testMyBooleand" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="DI" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ro.teamnet.di" />
+      <option name="MAIN_CLASS_NAME" value="ro.teamnet.di.MethodTest" />
+      <option name="METHOD_NAME" value="testMyBooleand" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -926,11 +975,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.BeanBuilderTest.testBeanBuilder" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MethodTest.testMethodMethods" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ScannerTest.testScanForBeans" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MethodTest.testDependencies" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MethodTest.testBeans" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MethodTest.testDependencies" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MethodTest.testBeans" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationContextTest.testInitContainer" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ScannerTest.testScanBeans" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MethodTest.testMyBooleand" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1034,16 +1083,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/annotations/Qualifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/BeanBuilderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="58" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.7.0_02/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="382" column="29" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.33199194" />
@@ -1052,11 +1091,6 @@
     <entry file="jar://D:/Program Files/Java/jdk1.7.0_02/src.zip!/java/lang/InstantiationException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="11" selection-start="1273" selection-end="1273" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/di/util/Bean.java">
@@ -1074,43 +1108,10 @@
         <state line="17" column="8" selection-start="598" selection-end="759" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/cache/CacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="45" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#414#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/ScannerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="41" selection-start="432" selection-end="432" vertical-scroll-proportion="0.45698926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.8.2/junit-4.8.2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="40" selection-start="397" selection-end="397" vertical-scroll-proportion="-6.8">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MyConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="44" selection-start="1229" selection-end="1229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="79" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,21 +1122,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java">
+    <entry file="jar://D:/Program Files/Java/jdk1.7.0_02/src.zip!/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="59" selection-start="6225" selection-end="6225" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3197#3211#0" expanded="true" />
-            <element signature="e#6705#6719#0" expanded="true" />
-          </folding>
+        <state line="585" column="52" selection-start="24012" selection-end="24060" vertical-scroll-proportion="0.3329384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/di/container/ApplicationContextImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="18" selection-start="1505" selection-end="1505" vertical-scroll-proportion="0.5971564">
+        <state line="72" column="63" selection-start="2435" selection-end="2435" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#661#677#0" expanded="true" />
+            <element signature="e#713#729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/cache/CacheManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="29" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#414#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/ScannerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="463" selection-end="463" vertical-scroll-proportion="0.55497384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/ApplicationContextTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="22" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MyConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="28" selection-start="1404" selection-end="1413" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/di/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="225" column="0" selection-start="10503" selection-end="10503" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3197#3211#0" expanded="true" />
+            <element signature="e#6747#6761#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ro/teamnet/di/MethodTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="16" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.53038675">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

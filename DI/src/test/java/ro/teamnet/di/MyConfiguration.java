@@ -13,6 +13,7 @@ import my.di.annotations.Configuration;
 import my.di.annotations.Qualifier;
 
 import javax.inject.Inject;
+import java.math.BigDecimal;
 
 
 @Configuration
@@ -45,10 +46,21 @@ public class MyConfiguration {
         return "TestBean";
     }
     
+    @Bean
+    public BigDecimal anotherBean() {
+        return BigDecimal.ZERO;
+    }
+    
     @Bean("team1")
     @Inject
     public Team team1(@Qualifier("DEP1") Department department1,@Qualifier("pers2") Person person1, String testBean) {
         return new Team(department1,testBean);
+    }
+    
+    @Bean
+    @Inject
+    public Boolean myBoolean(String testBean,BigDecimal anotherBean) {
+        return Boolean.TRUE;
     }
 
 }

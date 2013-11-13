@@ -13,6 +13,7 @@ import my.di.cache.CacheMapManager;
 import my.di.util.Bean;
 import my.di.util.Scanner;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,21 +30,42 @@ public class ApplicationContextImpl implements ApplicationContext {
         this.configurationClass = configurationClass;
     }
 
-    public ApplicationContext factory(Class configurationClass) {
+    public static ApplicationContext factory(Class configurationClass) {
         return new ApplicationContextImpl(configurationClass);
     }
 
-    public void initContainer() throws InstantiationException, IllegalAccessException, NoSuchMethodException {
+    @Override
+    public void initContainer() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Map<String,Bean> beans = Scanner.scanBeans(configurationClass);
         for (String name : beans.keySet()) {
             if (!cacheMap.containsKey(name)) {
                 Bean bean = beans.get(name);
-                Class containingClass = bean.getContainingClass();
-                Method method = bean.getMethod();
-//                containingClass.
-
+                
+                Object obj = instantiate(bean);
+                cacheMap.put(name, obj);
             }
         }
+        System.out.println(cacheMap);
+    }
+
+    private Object instantiate(Bean bean) throws InvocationTargetException, IllegalAccessException {
+
+        Object containingObject = bean.getContainingObject();
+        Method method = bean.getMethod();
+        Object obj;
+        if (bean.getDependencies() == null) {
+            obj = method.invoke(containingObject);
+        } else {
+            Map<String,Bean> dependencies = bean.getDependencies();
+            Object[] params = new Object[dependencies.size()];
+            int i = 0;
+            for (String s : dependencies.keySet()) {
+                params[i] = instantiate(dependencies.get(s));
+                i++;
+            }
+            obj = method.invoke(containingObject, params);
+        }
+        return obj;
     }
 
     @Override

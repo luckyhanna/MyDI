@@ -100,6 +100,7 @@ public class Scanner {
                 }
                 Bean bean = builder.build();
                 beanMap.put(name,bean);
+                beanCache.put(name,bean);
             }
         }
 
@@ -155,7 +156,6 @@ public class Scanner {
         Map<String,Bean> beanCache = cacheManager.getBeanCache();
         Class[] params = method.getParameterTypes();
         Annotation[][] annotations = method.getParameterAnnotations();
-        int paramIndex = annotations.length;
         for (int i = 0; i < annotations.length; i++) {
             if (annotations[i].length > 0) {
                 String name;
@@ -180,9 +180,9 @@ public class Scanner {
                     Class clazz = method.getDeclaringClass();
                     Object containingObject = clazz.newInstance();
                     Bean.BeanBuilder builder = Bean.builder().withName(name)
-                            .withType(method.getReturnType())
+                            .withType(methodToInject.getReturnType())
                             .withScope(Scope.SINGLETON)
-                            .withMethod(method)
+                            .withMethod(methodToInject)
                             .withContainingClass(clazz)
                             .withContainingObject(containingObject);
 
@@ -191,38 +191,36 @@ public class Scanner {
                     } else {
                          builder.withDependencies(null);
                     }
-                    Bean bean = builder.build();
+                    Bean bean = builder.build();                    
+                    dependencyMap.put(name,bean);
+                }
+            } else {
+                Method methodToInject = getMethodByClassAndReturnType(method.getDeclaringClass(), params[i]);
+                if (methodToInject == null) {
+                    throw new RuntimeException("No bean of type "+ params[i] +" found for Inject");
+                }
+                String name = methodToInject.getName();
+                if (beanCache.containsKey(name)) {
+                    dependencyMap.put(name,beanCache.get(name));
+                } else {
+                    Class clazz = method.getDeclaringClass();
+                    Object containingObject = clazz.newInstance();
+                    Bean.BeanBuilder builder = Bean.builder().withName(name)
+                            .withType(methodToInject.getReturnType())
+                            .withScope(Scope.SINGLETON)
+                            .withMethod(methodToInject)
+                            .withContainingClass(clazz)
+                            .withContainingObject(containingObject);
+
+                    if (methodToInject.isAnnotationPresent(Inject.class)) {
+                        builder.withDependencies(scanDependencies(methodToInject));
+                    } else {
+                        builder.withDependencies(null);
+                    }
+                    Bean bean = builder.build();                    
                     dependencyMap.put(name,bean);
                 }
             }
-        }
-        for (int i = paramIndex; i < params.length; i++) {
-            Method methodToInject = getMethodByClassAndReturnType(method.getDeclaringClass(), params[i]);
-            if (methodToInject == null) {
-                throw new RuntimeException("No bean of type "+ params[i] +" found for Inject");
-            }
-            String name = methodToInject.getName();
-            if (beanCache.containsKey(name)) {
-                dependencyMap.put(name,beanCache.get(name));
-            } else {
-                Class clazz = method.getDeclaringClass();
-                Object containingObject = clazz.newInstance();
-                Bean.BeanBuilder builder = Bean.builder().withName(name)
-                        .withType(method.getReturnType())
-                        .withScope(Scope.SINGLETON)
-                        .withMethod(method)
-                        .withContainingClass(clazz)
-                        .withContainingObject(containingObject);
-
-                if (methodToInject.isAnnotationPresent(Inject.class)) {
-                    builder.withDependencies(scanDependencies(methodToInject));
-                } else {
-                    builder.withDependencies(null);
-                }
-                Bean bean = builder.build();
-                dependencyMap.put(name,bean);
-            }
-
         }
 
         return dependencyMap;

@@ -8,7 +8,11 @@ package my.di.container;/*
 * written consent of Teamnet.
 */
 
+import java.lang.reflect.InvocationTargetException;
+
 public interface ApplicationContext {
+
+    void initContainer() throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException;
 
     Object getBean(String name);
 
